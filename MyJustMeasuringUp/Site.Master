@@ -1,0 +1,407 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MyJustMeasuringUp.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <title>About - Just Measuring Up</title>
+    <script type="text/javascript" src="Resources/js/Resources.js"></script>
+    <meta property="og:site_name" content="Just Measuring Up" />
+    <meta property="og:title" content="About" />
+    <meta property="og:description" content="Hi :) We’re Ash and Eileen, and we are telling the stories of our home projects here on our blog. We have no carpentry or design background, yet our passion for making our home more functional..." />
+    <meta property="og:url" content="http://www.justmeasuringup.com/about.html" />
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:image" content="http://www.justmeasuringup.com/uploads/7/1/5/6/71564023/0013-2016-07-04-13-45-57_orig.jpg" />
+    <meta name="google-site-verification" content="X00rJjD_Idxjy3C_78d2AoY9xt_OzPaLLg9C7CdLezo" />
+    <link id="wsite-base-style" rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/sites.css?buildTime=1468626491" />
+    <link rel="stylesheet" type="text/css" href="//cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1468626491" />
+    <link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/social-icons.css?buildtime=1468626491" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="http://www.justmeasuringup.com/files/main_style.css?1468803827" title="wsite-theme-css" />
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+    <style type='text/css'>
+        .wsite-elements.wsite-not-footer div.paragraph, .wsite-elements.wsite-not-footer p, .wsite-elements.wsite-not-footer .product-block .product-title, .wsite-elements.wsite-not-footer .product-description, .wsite-elements.wsite-not-footer .wsite-form-field label, .wsite-elements.wsite-not-footer .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {
+        }
+
+        #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {
+        }
+
+        .wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label {
+        }
+
+        .wsite-elements.wsite-not-footer h2, .wsite-elements.wsite-not-footer .product-long .product-title, .wsite-elements.wsite-not-footer .product-large .product-title, .wsite-elements.wsite-not-footer .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {
+        }
+
+        #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {
+        }
+
+        .wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title {
+        }
+
+        #wsite-title {
+        }
+
+        .wsite-menu-default a {
+        }
+
+        .wsite-menu a {
+        }
+
+        .wsite-image div, .wsite-caption {
+        }
+
+        .galleryCaptionInnerText {
+        }
+
+        .fancybox-title {
+        }
+
+        .wslide-caption-text {
+        }
+
+        .wsite-phone {
+        }
+
+        .wsite-headline {
+        }
+
+        .wsite-headline-paragraph {
+        }
+
+        .wsite-button-inner {
+        }
+
+        .wsite-not-footer blockquote {
+        }
+
+        .wsite-footer blockquote {
+        }
+
+        .blog-header h2 a {
+        }
+
+        #wsite-content h2.wsite-product-title {
+        }
+
+        .wsite-product .wsite-product-price a {
+        }
+    </style>
+
+    <script><!--
+    var STATIC_BASE = '//cdn1.editmysite.com/';
+    var STYLE_PREFIX = 'wsite';
+    //-->
+    </script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+    <script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1468626491&"></script>
+    <script src="//cdn2.editmysite.com/js/site/main.js?buildTime=1468626491"></script>
+    <script type="text/javascript">_W.configDomain = "www.weebly.com";</script>
+    <script>                                                                                      _W.relinquish && _W.relinquish()</script>
+    <script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1468626491&"></script>
+    <script> _W.themePlugins = [];</script>
+    <script type="text/javascript"><!--
+
+
+    (function (jQuery) {
+        function initFlyouts() {
+            initPublishedFlyoutMenus(
+                [{ "id": "967520039643790895", "title": "Home", "url": "index.html", "target": "", "nav_menu": false }, { "id": "842452227522300589", "title": "Gallery", "url": "gallery.html", "target": "", "nav_menu": false }, { "id": "477025198332206394", "title": "Blog", "url": "blog.html", "target": "", "nav_menu": false }, { "id": "527510109329086393", "title": "About", "url": "about.html", "target": "", "nav_menu": false }],
+                "527510109329086393",
+                '',
+                'active',
+                false,
+                { "navigation\/item": "<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nav_menu}}\n\t\t\thref=\"{{url}}\"\n\t\t{{\/nav_menu}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n", "navigation\/flyout\/list": "<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n", "navigation\/flyout\/item": "<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nav_menu}}\n\t\t\thref=\"{{url}}\"\n\t\t{{\/nav_menu}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n" },
+                {}
+            )
+        }
+        if (jQuery) {
+            jQuery(document).ready(function () { jQuery(initFlyouts); });
+        } else {
+            if (Prototype.Browser.IE) window.onload = initFlyouts;
+            else document.observe('dom:loaded', initFlyouts);
+        }
+    })(window._W && _W.jQuery)
+    //-->
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="no-header  wsite-theme-light  wsite-page-about full-width-on ">
+    <form id="form1" runat="server">
+
+        <div class="body-wrap">
+
+            <div id="header">
+                <div class="nav-trigger hamburger">
+                    <div class="open-btn">
+                        <span class="mobile"></span>
+                        <span class="mobile"></span>
+                        <span class="mobile"></span>
+                    </div>
+                </div>
+                <div id="sitename">
+                    <span class="wsite-logo">
+
+                        <a href="http://www.justmeasuringup.com">
+                            <img src="http://www.justmeasuringup.com/uploads/7/1/5/6/71564023/6101438.jpg" />
+                        </a>
+
+                    </span>
+                </div>
+            </div>
+
+            <div id="wrapper">
+                <div class="bg-wrapper">
+                    <div id="navigation">
+                        <ul class="wsite-menu-default">
+                            <li id="pg967520039643790895" class="wsite-menu-item-wrap">
+                                <a
+                                    href="http://www.justmeasuringup.com"
+                                    class="wsite-menu-item">Home
+                                </a>
+
+                            </li>
+                            <li id="pg842452227522300589" class="wsite-menu-item-wrap">
+                                <a
+                                    href="http://www.justmeasuringup.com/gallery.html"
+                                    class="wsite-menu-item">Gallery
+                                </a>
+                                <div class="wsite-menu-wrap" style="display: none">
+                                    <ul class="wsite-menu">
+                                        <li id="wsite-nav-570422437779299645"
+                                            class="wsite-menu-subitem-wrap ">
+                                            <a
+                                                href="http://www.justmeasuringup.com/before--after.html"
+                                                class="wsite-menu-subitem">
+                                                <span class="wsite-menu-title">Before & After
+                                                </span>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li id="pg477025198332206394" class="wsite-menu-item-wrap">
+                                <a
+                                    href="http://www.justmeasuringup.com/blog.html"
+                                    class="wsite-menu-item">Blog
+                                </a>
+
+                            </li>
+                            <li id="active" class="wsite-menu-item-wrap">
+                                <a
+                                    href="http://www.justmeasuringup.com/about.html"
+                                    class="wsite-menu-item">About
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-wrapper">
+                        <div id="content">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="footer-content">
+                        <div class='wsite-elements wsite-footer'>
+                            <div>
+                                <div class="wsite-multicol">
+                                    <div class="wsite-multicol-table-wrap" style="margin: 0 -15px;">
+                                        <table class="wsite-multicol-table">
+                                            <tbody class="wsite-multicol-tbody">
+                                                <tr class="wsite-multicol-tr">
+                                                    <td class="wsite-multicol-col" style="width: 50%; padding: 0 15px;">
+
+
+
+                                                        <div class="wsite-spacer" style="height: 50px;"></div>
+
+
+
+                                                    </td>
+                                                    <td class="wsite-multicol-col" style="width: 50%; padding: 0 15px;">
+
+
+
+                                                        <div class="wsite-spacer" style="height: 50px;"></div>
+
+
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="navmobile-wrapper">
+                <div id="navmobile" class="nav">
+                    <ul class="wsite-menu-default">
+                        <li id="pg967520039643790895" class="wsite-menu-item-wrap">
+                            <a
+                                href="http://www.justmeasuringup.com"
+                                class="wsite-menu-item">Home
+                            </a>
+
+                        </li>
+                        <li id="pg842452227522300589" class="wsite-menu-item-wrap">
+                            <a
+                                href="http://www.justmeasuringup.com/gallery.html"
+                                class="wsite-menu-item">Gallery
+                            </a>
+                            <div class="wsite-menu-wrap" style="display: none">
+                                <ul class="wsite-menu">
+                                    <li id="wsite-nav-570422437779299645"
+                                        class="wsite-menu-subitem-wrap ">
+                                        <a
+                                            href="http://www.justmeasuringup.com/before--after.html"
+                                            class="wsite-menu-subitem">
+                                            <span class="wsite-menu-title">Before & After
+                                            </span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li id="pg477025198332206394" class="wsite-menu-item-wrap">
+                            <a
+                                href="http://www.justmeasuringup.com/blog.html"
+                                class="wsite-menu-item">Blog
+                            </a>
+
+                        </li>
+                        <li id="active" class="wsite-menu-item-wrap">
+                            <a
+                                href="http://www.justmeasuringup.com/about.html"
+                                class="wsite-menu-item">About
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script language="javascript" src="http://www.justmeasuringup.com/files/theme/plugins.js?1467246675"></script>
+        <script language="javascript" src="http://www.justmeasuringup.com/files/theme/custom.js?1467246675"></script>
+        <script language="javascript" src="http://www.justmeasuringup.com/files/theme/mobile.js?1467246675"></script>
+
+
+        <script async defer data-pin-hover="true" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+
+
+        <script>
+
+            (function (jQuery) {
+                try {
+                    if (jQuery) {
+                        jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
+                        var $commentFrame = jQuery('#commentArea iframe');
+                        if ($commentFrame.length > 0) {
+                            var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
+                            $commentFrame.css('min-height', frameHeight + 'px');
+                        }
+                        if (jQuery('.product-button').length > 0) {
+                            jQuery(document).ready(function () {
+                                jQuery('.product-button').parent().each(function (index, product) {
+                                    if (jQuery(product).attr('target') == 'paypal') {
+                                        if (!jQuery(product).find('> [name="bn"]').length) {
+                                            jQuery('<input>').attr({
+                                                type: 'hidden',
+                                                name: 'bn',
+                                                value: 'DragAndDropBuil_SP_EC'
+                                            }).appendTo(product);
+                                        }
+                                    }
+                                });
+                            });
+                        }
+                    }
+                    else {
+                        // Prototype
+                        $$('div.blog-social div.fb-like').each(function (div) {
+                            div.className = 'blog-social-item blog-fb-like';
+                        });
+                        $$('#commentArea iframe').each(function (iframe) {
+                            iframe.style.minHeight = '410px';
+                        });
+                    }
+                }
+                catch (ex) { }
+            })(window._W && _W.jQuery);
+
+        </script>
+        <div id="eu-cookie" class="notification" style="display: none;">
+            <span id="eu-cookie-content"></span>
+            <span id="eu-cookie-close">&#10005</span>
+        </div>
+
+        <script type="text/javascript">
+            (function ($) {
+                var cookie_location = '';
+
+                // this cookie_content should already be pre-encoded from CookieSettingView.js
+                var cookie_content = '' || _W.stl('templates.publish.virtual-includes.footerCode_1');
+
+                if (!_W.getCookie('876656729614985622_cookie_policy') || (_W.getCookie('876656729614985622_cookie_policy') !== cookie_content)) {
+                    if (cookie_location === 'top' || cookie_location === 'bottom') {
+                        $('#eu-cookie-content').text(decodeURIComponent(cookie_content));
+                        (cookie_location === 'top') ? animateFromTop() : animateFromBottom();
+                        $('#eu-cookie').show();
+                    }
+                }
+
+                $('#eu-cookie-close').click(function () {
+                    _W.setCookie('876656729614985622_cookie_policy', cookie_content, 100000);
+                    $('#eu-cookie').hide();
+                });
+
+                function animateFromTop() {
+                    $('#eu-cookie').css({
+                        'top': '0px',
+                        'animation': 'reveal-top 1 2s'
+                    });
+                }
+
+                function animateFromBottom() {
+                    $('#eu-cookie').css({
+                        'bottom': '0px',
+                        'animation': 'reveal-bottom 1 2s'
+                    });
+                }
+            })(window._W && _W.jQuery);
+
+        </script>
+    </form>
+</body>
+</html>
+
+

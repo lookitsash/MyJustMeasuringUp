@@ -179,7 +179,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="border-top: 1px solid #ccc;text-align:left;">
-                    <i><% =post.Date %></i> - <% =post.Desc.Replace("\r","").Replace("\n","<br/>") %>
+                    <% =post.Desc.Replace("\r","").Replace("\n","<br/>") %>
                     <br />
                     - <span style="font-size:10px;"><i><% =post.Date %></i></span>
                     <%

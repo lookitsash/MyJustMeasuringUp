@@ -34,6 +34,7 @@ namespace MyJustMeasuringUp
                         Desc = dra.Get<string>("Desc"),
                         From = dra.Get<string>("From"),
                         GUID = dra.Get<string>("ID"),
+                        Date = dra.Get<string>("Date"),
                         ImageURL = ConfigAdapter.GetAppSetting("ImageURL") + "/" + dra.Get<string>("ID") + ".jpg",
                         Name = dra.Get<string>("Name"),
                         SiteURL = dra.Get<string>("SiteURL")

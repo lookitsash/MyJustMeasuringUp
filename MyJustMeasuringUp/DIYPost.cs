@@ -7,6 +7,6 @@ namespace MyJustMeasuringUp
 {
     public class DIYPost
     {
-        public string GUID, Name, Desc, From, SiteURL, ImageURL;
+        public string GUID, Name, Desc, Date, From, SiteURL, ImageURL;
     }
 }

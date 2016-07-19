@@ -84,6 +84,10 @@
         }
 
         function posting() {
+            if (!verifyCaptcha()) {
+                alert('Please confirm that you are not a robot');
+                return false;
+            }
             var form = resources.dataFieldsToObject($('.postPicDiv'));
             if (resources.stringNullOrEmpty(form.file) || resources.stringNullOrEmpty(form.from) || resources.stringNullOrEmpty(form.name) || resources.stringNullOrEmpty(form.desc))
             {
@@ -97,7 +101,19 @@
             
             return true;
         }
+
+        function verifyCaptcha(form) {
+            var v = grecaptcha.getResponse();
+            if (v.length == 0) {
+                return false;
+            }
+            if (v.length != 0) {
+                return true;
+            }
+        }
     </script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -125,12 +141,13 @@
         Project Name <span style="color:#ff0000; font-weight:bold;">*</span>:<br />
         <asp:TextBox runat="server" ID="TB_Name" CssClass="inputField data-name"></asp:TextBox><br />
         <br />
-        Web link for more details <i>(<b>optional</b>, but we appreciate backlinks to JustMeasuringUp.com)</i>:
-        <br />http://<asp:TextBox Width="300" CssClass="inputField data-url" runat="server" ID="TB_SiteURL"></asp:TextBox><br />
-        <br />
         Short Description <span style="color:#ff0000; font-weight:bold;">*</span>:<br />
         <asp:TextBox Columns="50" Rows="3" runat="server" CssClass="inputField data-desc" ID="TB_Desc" TextMode="MultiLine"></asp:TextBox><br />
         <br />
+        Web link for more details <i>(<b>optional</b>, but we appreciate backlinks to JustMeasuringUp.com)</i>:
+        <br />http://<asp:TextBox Width="300" CssClass="inputField data-url" runat="server" ID="TB_SiteURL"></asp:TextBox><br />
+        <br />
+        <div class="g-recaptcha" data-sitekey="6LfaciUTAAAAAJD553zJhb4lYmeaW9rTkQwX2CDz"></div><br />
         <asp:Button runat="server" ID="BTN_Post" Text="Submit" OnClientClick="return posting();" OnClick="BTN_Post_Click" />&nbsp;&nbsp;&nbsp;<button onclick="closePostPicDiv();return false;">Cancel</button>
     </div>
     <hr />

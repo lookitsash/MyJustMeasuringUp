@@ -19,7 +19,7 @@ namespace MyJustMeasuringUp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack) BindData();
+            BindData();
         }
 
         private void BindData()

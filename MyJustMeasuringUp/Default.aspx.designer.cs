@@ -40,15 +40,6 @@ namespace MyJustMeasuringUp {
         protected global::System.Web.UI.WebControls.TextBox TB_Name;
         
         /// <summary>
-        /// TB_SiteURL control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TB_SiteURL;
-        
-        /// <summary>
         /// TB_Desc control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace MyJustMeasuringUp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TB_Desc;
+        
+        /// <summary>
+        /// TB_SiteURL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_SiteURL;
         
         /// <summary>
         /// BTN_Post control.

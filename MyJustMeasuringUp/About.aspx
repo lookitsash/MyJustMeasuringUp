@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="MyJustMeasuringUp.About" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <meta property="og:title" content="About" />
+    <meta property="og:url" content="http://www.justmeasuringup.com/about.html" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id='wsite-content' class='wsite-elements wsite-not-footer'>

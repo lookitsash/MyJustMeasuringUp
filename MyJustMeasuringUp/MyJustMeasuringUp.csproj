@@ -69,8 +69,25 @@
     <Content Include="Default.aspx" />
     <Content Include="Properties\Foundation.dll" />
     <Content Include="Properties\Newtonsoft.Json.dll" />
+    <Content Include="Resources\js\fancybox\blank.gif" />
+    <Content Include="Resources\js\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Resources\js\fancybox\fancybox_loading.gif" />
+    <Content Include="Resources\js\fancybox\fancybox_overlay.png" />
+    <Content Include="Resources\js\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Resources\js\fancybox\fancybox_sprite.png" />
+    <Content Include="Resources\js\fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="Resources\js\fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Resources\js\fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Resources\js\fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="Resources\js\fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Resources\js\fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Resources\js\fancybox\jquery.fancybox.css" />
+    <Content Include="Resources\js\fancybox\jquery.fancybox.js" />
+    <Content Include="Resources\js\fancybox\jquery.fancybox.pack.js" />
     <Content Include="Resources\js\Resources.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -80,6 +97,7 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Access.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,6 +106,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DIYPost.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +114,7 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Statics.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />

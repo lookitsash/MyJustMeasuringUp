@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <title>About - Just Measuring Up</title>
+    <title>Just Measuring Up</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="Resources/js/Resources.js"></script>
-    <meta property="og:site_name" content="Just Measuring Up" />
-    <meta property="og:title" content="About" />
+    <meta property="og:site_name" content="Just Measuring Up" />    
     <meta property="og:description" content="Hi :) We’re Ash and Eileen, and we are telling the stories of our home projects here on our blog. We have no carpentry or design background, yet our passion for making our home more functional..." />
-    <meta property="og:url" content="http://www.justmeasuringup.com/about.html" />
+    
 
 
 
@@ -113,7 +113,7 @@
     (function (jQuery) {
         function initFlyouts() {
             initPublishedFlyoutMenus(
-                [{ "id": "967520039643790895", "title": "Home", "url": "index.html", "target": "", "nav_menu": false }, { "id": "842452227522300589", "title": "Gallery", "url": "gallery.html", "target": "", "nav_menu": false }, { "id": "477025198332206394", "title": "Blog", "url": "blog.html", "target": "", "nav_menu": false }, { "id": "527510109329086393", "title": "About", "url": "about.html", "target": "", "nav_menu": false }],
+                [{ "id": "967520039643790895", "title": "Home", "url": "index.html", "target": "", "nav_menu": false }, { "id": "842452227522300589", "title": "Gallery", "url": "gallery.html", "target": "", "nav_menu": false }, { "id": "477025198332206394", "title": "Blog", "url": "blog.html", "target": "", "nav_menu": false }, { "id": "527510109329086395", "title": "Community", "url": "Default.aspx", "target": "", "nav_menu": false }, { "id": "527510109329086393", "title": "About", "url": "about.html", "target": "", "nav_menu": false }],
                 "527510109329086393",
                 '',
                 'active',
@@ -198,7 +198,14 @@
                                 </a>
 
                             </li>
-                            <li id="active" class="wsite-menu-item-wrap">
+                            <li class="wsite-menu-item-wrap">
+                                <a
+                                    href="<% =Foundation.ConfigAdapter.GetAppSetting("BaseURL") %>/Default.aspx"
+                                    class="wsite-menu-item">Community
+                                </a>
+
+                            </li>
+                            <li class="wsite-menu-item-wrap">
                                 <a
                                     href="http://www.justmeasuringup.com/about.html"
                                     class="wsite-menu-item">About
@@ -214,45 +221,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="footer">
-                    <div id="footer-content">
-                        <div class='wsite-elements wsite-footer'>
-                            <div>
-                                <div class="wsite-multicol">
-                                    <div class="wsite-multicol-table-wrap" style="margin: 0 -15px;">
-                                        <table class="wsite-multicol-table">
-                                            <tbody class="wsite-multicol-tbody">
-                                                <tr class="wsite-multicol-tr">
-                                                    <td class="wsite-multicol-col" style="width: 50%; padding: 0 15px;">
-
-
-
-                                                        <div class="wsite-spacer" style="height: 50px;"></div>
-
-
-
-                                                    </td>
-                                                    <td class="wsite-multicol-col" style="width: 50%; padding: 0 15px;">
-
-
-
-                                                        <div class="wsite-spacer" style="height: 50px;"></div>
-
-
-
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
 
             <div class="navmobile-wrapper">
@@ -294,7 +262,14 @@
                             </a>
 
                         </li>
-                        <li id="active" class="wsite-menu-item-wrap">
+                        <li id="pg477025198332206395" class="wsite-menu-item-wrap">
+                            <a
+                                href="<% =Foundation.ConfigAdapter.GetAppSetting("BaseURL") %>/Default.aspx"
+                                class="wsite-menu-item">Community
+                            </a>
+
+                        </li>
+                        <li class="wsite-menu-item-wrap">
                             <a
                                 href="http://www.justmeasuringup.com/about.html"
                                 class="wsite-menu-item">About

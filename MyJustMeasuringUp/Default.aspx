@@ -122,7 +122,7 @@
 
     We love to see what DIY projects the community has been working on.  Here are recent posts from you guys.  Thanks for sharing, and keep them coming!<br />
     <br />
-    <button class="postPicButton" onclick="showPostPicDiv();return false;">Post my project!</button><br />
+    <button class="postPicButton" onclick="showPostPicDiv();return false;">Submit my project</button><br />
     <br />
     <div class="posting" style="display:none;">Please wait while your image is being uploaded...</div>
     <% if (UploadComplete)
@@ -156,21 +156,23 @@
     <%
         foreach (MyJustMeasuringUp.DIYPost post in DIYPosts)
         {
+            string siteURL = post.SiteURL;
+            if (!String.IsNullOrEmpty(siteURL) && !siteURL.StartsWith("http")) siteURL = "http://" + siteURL;
     %>
     <div class="imagePost">
         <table style="border: 1px solid #ccc;" cellspacing="0" cellpadding="0">
             <tr>
-                <td style=" border-right: 1px solid #ccc;text-align:center; width:180px;"><a class="fancybox" href="<% =post.ImageURL %>" ><img src="<% =post.ImageURL %>"/></a></td>
+                <td style=" border-right: 1px solid #ccc;text-align:center; width:180px;"><a class="fancybox" href="<% =post.ImageURL %>" ><img alt="<% =post.Name %>" src="<% =post.ImageURL %>"/></a></td>
                 <td rowspan="2" style="vertical-align:top; padding:5px; text-align:left; width:260px;">
                     <% =post.Desc.Replace("\r","").Replace("\n","<br/>") %>
                     <br />
                     - <span style="font-size:10px;"><i><% =post.Date %></i></span>
                     <%
-                        if (!String.IsNullOrEmpty(post.SiteURL))
+            if (!String.IsNullOrEmpty(siteURL))
                         { 
                     %>
                     <br /><br />
-                    <a href="<% =post.SiteURL %>" target="_blank" style="font-size:12px;">read more...</a>
+                    <a href="<% =siteURL %>" target="_blank" style="font-size:12px;">read more...</a>
                     <%
                         }
                     %>                    
@@ -188,7 +190,7 @@
     <div class="imagePostMobile">
         <table style="border: 1px solid #ccc;" cellspacing="0" cellpadding="0">
             <tr>
-                <td style=" border-right: 1px solid #ccc;text-align:center;"><a class="fancybox" href="<% =post.ImageURL %>" ><img src="<% =post.ImageURL %>" /></a></td>
+                <td style=" border-right: 1px solid #ccc;text-align:center;"><a class="fancybox" href="<% =post.ImageURL %>" ><img alt="<% =post.Name %>" src="<% =post.ImageURL %>" /></a></td>
                 <td style="vertical-align:top; padding:5px;">
                     <span style="font-size:12px;"><b><% =post.Name %></b></span><br />
                     <span style="font-size:10px;">by <% =post.From %></span>
@@ -200,11 +202,11 @@
                     <br />
                     - <span style="font-size:10px;"><i><% =post.Date %></i></span>
                     <%
-                        if (!String.IsNullOrEmpty(post.SiteURL))
+            if (!String.IsNullOrEmpty(siteURL))
                         { 
                     %>
                     <br /><br />
-                    <a href="<% =post.SiteURL %>" target="_blank" style="font-size:12px;">read more...</a>
+                    <a href="<% =siteURL %>" target="_blank" style="font-size:12px;">read more...</a>
                     <%
                         }
                     %>

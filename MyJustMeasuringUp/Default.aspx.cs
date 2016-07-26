@@ -6,6 +6,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -68,7 +69,9 @@ namespace MyJustMeasuringUp
                         myEncoderParameters.Param[0] = myEncoderParameter;
                         img.Save(targetFile, jgpEncoder, myEncoderParameters);
                     }
-                    Statics.Access.DIYPost(new DIYPost()
+
+                    DIYPost post = null;
+                    Statics.Access.DIYPost(post = new DIYPost()
                     {
                         GUID = guid,
                         From = TB_From.Text.Trim(),
@@ -76,6 +79,41 @@ namespace MyJustMeasuringUp
                         Desc = TB_Desc.Text.Trim(),
                         SiteURL = TB_SiteURL.Text.Trim()                        
                     }, Request.UserHostAddress);
+
+                    try
+                    {
+                        string recipient = ConfigAdapter.GetAppSetting("EmailNotificationAddress");
+                        SmtpClient smtpClient = new SmtpClient(ConfigAdapter.GetAppSetting("SMTPServer"));
+                        smtpClient.Credentials = new System.Net.NetworkCredential(ConfigAdapter.GetAppSetting("SMTPServerUsername"), ConfigAdapter.GetAppSetting("SMTPServerPassword"));
+                        smtpClient.EnableSsl = true;
+                        smtpClient.Port = 587;
+                        string emailBodyHtml = @"New community post pending approval<br/>
+<br/>
+Date: @DATE<br/>
+IP: @IP<br/>
+<br/>
+From: @FROM<br/>
+Name: @NAME<br/>
+URL: @SITEURL<br/>
+Description: @DESC<br/>
+<br/>
+<img src=""@IMGURL""/>
+";
+                        emailBodyHtml = emailBodyHtml.Replace("@DATE", DateTime.Now.ToString());
+                        emailBodyHtml = emailBodyHtml.Replace("@IP", Request.UserHostAddress);
+                        emailBodyHtml = emailBodyHtml.Replace("@FROM", post.From);
+                        emailBodyHtml = emailBodyHtml.Replace("@NAME", post.Name);
+                        emailBodyHtml = emailBodyHtml.Replace("@SITEURL", post.SiteURL);
+                        emailBodyHtml = emailBodyHtml.Replace("@DESC", post.Desc.Replace("\r", "").Replace("\n", "<br/>"));
+                        emailBodyHtml = emailBodyHtml.Replace("@IMGURL", ConfigAdapter.GetAppSetting("ImageURL") + "/" + guid + ".jpg");
+                        MailMessage mailMessage = new MailMessage(recipient, recipient, "New Community Post", emailBodyHtml);
+                        mailMessage.IsBodyHtml = true;
+                        smtpClient.Send(mailMessage);
+                    }
+                    catch (Exception exc)
+                    {
+
+                    }
                 }
             }
             catch (Exception ex)

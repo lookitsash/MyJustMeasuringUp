@@ -120,9 +120,10 @@
 <div id='wsite-content' class='wsite-elements wsite-not-footer'>
         <h2 class="wsite-content-title" style="text-align: left;"><font color="#626262">Community<span>&nbsp;</span></font></h2>
 
-    We love to see what DIY projects the community has been working on.  Here are recent posts from you guys.  Thanks for sharing, and keep them coming!<br />
+    We always love seeing what do-it-yourself projects you have been working on. Simply add a picture and caption below to share your projects with our community. <br />
+    <br />Thanks for sharing, and keep them coming!<br />
     <br />
-    <button class="postPicButton" onclick="showPostPicDiv();return false;">Submit my project</button><br />
+    <button class="postPicButton" onclick="showPostPicDiv();return false;">Add Photo</button><br />
     <br />
     <div class="posting" style="display:none;">Please wait while your image is being uploaded...</div>
     <% if (UploadComplete)
